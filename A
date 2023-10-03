@@ -1,0 +1,12 @@
+local A_1 = game.Players.LocalPlayer.name.." [Loaded amongus Server Destroyed Hub v2.0.0]"-----message here
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.Position=game.Workspace.RankGiverPads.Model.TouchPart.Position+Vector3.new(0,0,0)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
