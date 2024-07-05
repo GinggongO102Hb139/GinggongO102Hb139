@@ -209,6 +209,38 @@ game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild(
 
 end)
 
+Section:NewButton("fly all glitch", "o", function()
+    local args = {
+    [1] = ";fly others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("damage all glitch", "o", function()
+    local args = {
+    [1] = ";damage others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("size all glitch", "o", function()
+    local args = {
+    [1] = ";size others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("hip all glitch", "o", function()
+    local args = {
+    [1] = ";hip others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
 local Tab = Window:NewTab("Scripts [Useful]")
 
 local Section = Tab:NewSection("welcome back 2f hehe🥶😱💀")
