@@ -225,6 +225,8 @@ Section:NewButton("2F_83 HUB", "the most powerful script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Mys112/GINGGONG-SUPER/main/2F_83%20HUB"))()
 end)
 
+Section:NewKeybind("F", "F", Enum.KeyCode.F, function() 	Library:ToggleUI() end)
+
 local Tab = Window:NewTab("Server Controller")
 
 local Section = Tab:NewSection("Require [Admin]")
