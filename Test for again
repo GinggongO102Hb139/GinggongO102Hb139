@@ -1,0 +1,327 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("Commands HUB Reborn V1.0.0 by O102Hb239 & 2F_83", "Synapse")
+
+local Tab = Window:NewTab("Commands [Defends]")
+
+local Section = Tab:NewSection("Require [Admin]")
+
+Section:NewLabel("Prefix Require [;]")
+
+Section:NewButton("Unmute", "Opens you chat menu", function()
+    local args = {
+    [1] = ";unmute"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Refresh", "Refressed your avatar [anti loopkill]", function()
+    local args = {
+    [1] = ";refresh"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Anti Fogend", "Yeah that's it", function()
+    local args = {
+    [1] = ";fogend inf"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Unjail", "incase you’re in jail", function()
+    local args = {
+    [1] = ";unjail"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Unice", "no 🥶", function()
+    local args = {
+    [1] = ";unice"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Unblur", "you can see now", function()
+    local args = {
+    [1] = ";unblur"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+local Tab = Window:NewTab("Commands [Attacks]")
+
+local Section = Tab:NewSection("Require [Admin]")
+
+Section:NewLabel("Prefix Require [;]")
+
+Section:NewButton("Countdown2 Inf", "Blank Loop", function()
+    local args = {
+    [1] = ";countdown2 inf"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Fogend 0", "Blind People", function()
+    local args = {
+    [1] = ";fogend 0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Mute All", "so they can't talk", function()
+    local args = {
+    [1] = ";mute others"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Blur All", "they all can't see much", function()
+    local args = {
+    [1] = ";blur others inf"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Jail All", "CRIMINALS!", function()
+    local args = {
+    [1] = ";jail others"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Ice All", "🥶🥶🥶", function()
+    local args = {
+    [1] = ";ice others"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Night", "this is FE", function()
+    local args = {
+    [1] = ";time 0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Loopkill All", "lol keep dying", function()
+    local args = {
+    [1] = ";loopkill others"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Kill All", "Ez", function()
+    local args = {
+    [1] = ";kill all"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Explode All", "boom", function()
+    local args = {
+    [1] = ";explode others"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Kick All", "[danger]", function()
+    local args = {
+    [1] = ";kick others"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+local Tab = Window:NewTab("Commands [Broken]")
+
+local Section = Tab:NewSection("Require [Admin]")
+
+Section:NewLabel("Prefix Require [;]")
+
+Section:NewButton("Noclip All Glitch", "Camera Bug", function()
+    local args = {
+    [1] = ";noclip others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Skip All Glitch", "lol same like refresh", function()
+    local args = {
+    [1] = ";skip others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Jumppower All glitch", "no jump any more lol", function()
+    local args = {
+    [1] = ";jumppower others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Speed All Glitch", "Bug lol", function()
+    local args = {
+    [1] = ";speed others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("fly all glitch", "o", function()
+    local args = {
+    [1] = ";fly others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("damage all glitch", "o", function()
+    local args = {
+    [1] = ";damage others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("size all glitch", "o", function()
+    local args = {
+    [1] = ";size others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("hip all glitch", "o", function()
+    local args = {
+    [1] = ";hip others nan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
+local Tab = Window:NewTab("Scripts [Useful]")
+
+local Section = Tab:NewSection("welcome back 2f hehe🥶😱💀")
+
+Section:NewButton("Get Admin [only for Jump Over 100 Walls For Admin]", "instanly get admin", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Position=game.Workspace.RankGiverPads.Model.TouchPart.Position+Vector3.new(0,0,0)
+end)
+
+Section:NewButton("Infinite Yield FE", "OP admin", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Section:NewButton("2F_83 HUB", "the most powerful script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mys112/GINGGONG-SUPER/main/2F_83%20HUB"))()
+end)
+
+Section:NewKeybind("F", "F", Enum.KeyCode.F, function() 	Library:ToggleUI() end)
+
+local Tab = Window:NewTab("Server Controller")
+
+local Section = Tab:NewSection("Require [Admin]")
+
+Section:NewLabel("Prefix Require [;]")
+
+Section:NewButton("Server Hacked 1", "idk", function()
+    local args = {
+    [1] = ";disco ;time ;music 1837463370 ;volume 10 ;titleg all hacked by 2F_83"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("[Not recommend to press]", "idk", function()
+    local args = {
+    [1] = ";m SERVER DESTROYER IS BACK MUAHAHAHAHA"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("Server Shutdown 1", "yeaa", function()
+    local args = {
+    [1] = ";fogend 0 ;fogcolor black ;time"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("Server Shutdown 2", "jajaja", function()
+    local args = {
+    [1] = ";countdown 2 inf ;countdown2 inf ;countdown2 inf ;countdown2 inf ;mute all"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
+end)
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0.474178404, 0, 0.0194986071, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Close"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 28.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:Connect(function()
+    if Toggle.Text == "Close" then
+        Toggle.Text = "Open"
+    else
+        Toggle.Text = "Close"
+    end
+    Library:ToggleUI()
+end)
+
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
