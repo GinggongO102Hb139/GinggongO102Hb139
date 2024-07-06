@@ -1,6 +1,8 @@
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))() local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))() Notification:Notify( {Title = " Commands Hub Reborn", Description = "Welcome to Commands Hub Reborn! "}, {OutlineColor = Color3.fromRGB(121, 68, 59),Time = 5, Type = "default"} ) wait(5) local s = Instance.new("Sound") s.Name = "Sound" s.SoundId = "http://www.roblox.com/asset/?id=9125485916" s.Volume = 10 s.Looped = false s.archivable = false s.Parent = game.Workspace wait() s:play() 
+
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
-local Window = Library.CreateLib("Commands HUB Reborn V1.0.0 by O102Hb239 & 2F_83", "Synapse")
+local Window = Library.CreateLib("Commands HUB Reborn V1.4.2 by O102Hb239 & 2F_83", "Synapse")
 
 local Tab = Window:NewTab("Commands [Defends]")
 
@@ -296,3 +298,32 @@ Section:NewButton("Server Shutdown 2", "jajaja", function()
 
 game:GetService("ReplicatedStorage"):WaitForChild("HDAdminClient"):WaitForChild("Signals"):WaitForChild("RequestCommand"):InvokeServer(unpack(args))
 end)
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0.474178404, 0, 0.0194986071, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Close"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 28.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:Connect(function()
+    if Toggle.Text == "Close" then
+        Toggle.Text = "Open"
+    else
+        Toggle.Text = "Close"
+    end
+    Library:ToggleUI()
+end)
+
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
